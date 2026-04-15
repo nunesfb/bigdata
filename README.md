@@ -532,6 +532,4 @@ Momentos de apresentação e crítica técnica de arquiteturas propostas pelos e
 
 Projeto integrador em grupo, articulando armazenamento, processamento, modelagem e justificativa arquitetural.
 
----
-Como a estrutura de dois finais de semana completos já totaliza 40 horas, essa sexta extra deve ser tratada como atividade complementar ou ajuste institucional da distribuição horária.
 
