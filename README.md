@@ -1,12 +1,10 @@
-# Plano da Disciplina — Introdução ao Big Data, Armazenamento e Processamento de Dados em Escala, Tecnologias para Ciência de Dados e Bancos de Dados NoSQL para Ciência de Dados
+# Introdução ao Big Data, Armazenamento e Processamento de Dados em Escala, Tecnologias para Ciência de Dados e Bancos de Dados NoSQL para Ciência de Dados
 
 ## 1. Identificação da disciplina
 
 **Disciplina:** Introdução ao Big Data; Armazenamento e Processamento de Dados em Escala; Tecnologias para Ciência de Dados; Bancos de Dados NoSQL para Ciência de Dados  
 **Curso:** Especialização em Ciência de Dados e Inteligência Artificial  
 **Carga horária:** 40 horas  
-**Formato:** 2 finais de semana, com aulas na sexta-feira à tarde e à noite, sábado pela manhã e à tarde, e domingo pela manhã  
-**Perfil da oferta:** disciplina com ênfase teórica e prática, orientada à aplicação em problemas reais de dados e IA
 
 ---
 
@@ -110,12 +108,7 @@ Essa escolha permite aprofundar o uso prático de um conjunto enxuto de ferramen
 
 ## 9. Avaliação
 
-Sugestão de composição avaliativa:
-
-- **20%** participação, presença qualificada e exercícios curtos;
-- **30%** laboratórios práticos;
-- **20%** desafios de análise arquitetural e modelagem;
-- **30%** mini projeto final em grupo.
+- **100%** laboratórios práticos e mini projeto final em grupo.
 
 ### Critérios de avaliação
 
@@ -128,31 +121,8 @@ Sugestão de composição avaliativa:
 
 ---
 
-## 10. Organização da carga horária
+## 10. Sequência didática da disciplina
 
-A disciplina está estruturada em **10 encontros de 4 horas**, totalizando **40 horas**.
-
-### Distribuição
-
-**Fim de semana 1**  
-- Sexta-feira à tarde: 4h  
-- Sexta-feira à noite: 4h  
-- Sábado pela manhã: 4h  
-- Sábado à tarde: 4h  
-- Domingo pela manhã: 4h  
-
-**Fim de semana 2**  
-- Sexta-feira à tarde: 4h  
-- Sexta-feira à noite: 4h  
-- Sábado pela manhã: 4h  
-- Sábado à tarde: 4h  
-- Domingo pela manhã: 4h  
-
----
-
-## 11. Sequência didática da disciplina
-
-## Encontro 1 — Sexta-feira à tarde
 ### Tema: Introdução ao Big Data e o problema de dados em escala
 
 **Objetivos do encontro**
@@ -190,7 +160,6 @@ Em grupos, os estudantes elaboram um quadro com:
 
 ---
 
-## Encontro 2 — Sexta-feira à noite
 ### Tema: Armazenamento de dados em escala
 
 **Objetivos do encontro**
@@ -228,7 +197,6 @@ Laboratório guiado com:
 
 ---
 
-## Encontro 3 — Sábado pela manhã
 ### Tema: Fundamentos do processamento distribuído e introdução ao Spark
 
 **Objetivos do encontro**
@@ -265,7 +233,6 @@ Laboratório em PySpark para responder perguntas como:
 
 ---
 
-## Encontro 4 — Sábado à tarde
 ### Tema: ETL/ELT, qualidade de dados e performance
 
 **Objetivos do encontro**
@@ -302,7 +269,6 @@ Desafio de diagnóstico em grupo com correção de:
 
 ---
 
-## Encontro 5 — Domingo pela manhã
 ### Tema: Tecnologias para ciência de dados e arquiteturas de dados
 
 **Objetivos do encontro**
@@ -340,7 +306,6 @@ Em grupos, os estudantes propõem arquiteturas para cenários como:
 
 ---
 
-## Encontro 6 — Sexta-feira à tarde
 ### Tema: Fundamentos de NoSQL e decisão arquitetural
 
 **Objetivos do encontro**
@@ -376,7 +341,6 @@ Os grupos recebem diferentes problemas do cenário e devem decidir:
 
 ---
 
-## Encontro 7 — Sexta-feira à noite
 ### Tema: Banco de documentos na prática — MongoDB
 
 **Objetivos do encontro**
@@ -414,7 +378,6 @@ Laboratório guiado com:
 
 ---
 
-## Encontro 8 — Sábado pela manhã
 ### Tema: Outros modelos NoSQL e aplicações em ciência de dados
 
 **Objetivos do encontro**
@@ -449,7 +412,6 @@ Atividades em estações:
 
 ---
 
-## Encontro 9 — Sábado à tarde
 ### Tema: Integração de tecnologias para ciência de dados e IA
 
 **Objetivos do encontro**
@@ -487,7 +449,6 @@ Mini projeto orientado em grupo com etapas como:
 
 ---
 
-## Encontro 10 — Domingo pela manhã
 ### Tema: Consolidação, apresentação e fechamento
 
 **Objetivos do encontro**
@@ -524,22 +485,7 @@ Cada grupo apresenta:
 
 ---
 
-## 12. Estrutura recomendada para cada encontro de 4 horas
-
-Sugestão de organização de cada aula:
-
-1. retomada e contextualização do encontro anterior — 20 min;
-2. exposição conceitual — 60 a 75 min;
-3. demonstração guiada — 30 a 40 min;
-4. laboratório prático — 70 a 90 min;
-5. exercício aplicado ou desafio em grupo — 30 a 40 min;
-6. sistematização e fechamento — 15 a 20 min.
-
-Essa estrutura favorece retenção, participação e articulação entre teoria, demonstração e prática.
-
----
-
-## 13. Tipos de atividades práticas sugeridas
+## 11. Atividades práticas 
 
 ### Microlabs em todas as aulas
 
@@ -587,20 +533,5 @@ Momentos de apresentação e crítica técnica de arquiteturas propostas pelos e
 Projeto integrador em grupo, articulando armazenamento, processamento, modelagem e justificativa arquitetural.
 
 ---
-
-## 14. Resultados esperados
-
-Ao término da disciplina, o estudante deverá ser capaz de compreender problemas de dados em escala e propor soluções coerentes para armazenamento, processamento e disponibilização de dados, articulando fundamentos de Big Data, tecnologias de ciência de dados e paradigmas NoSQL em cenários aplicados a analytics e IA.
-
----
-
-## 15. Observação sobre uma sexta-feira extra
-
-Caso a instituição efetivamente deseje incluir **uma sexta-feira adicional**, recomenda-se utilizá-la de forma complementar, sem romper a sequência principal, em uma das seguintes modalidades:
-
-- **aula de nivelamento prévio**, com setup de ambiente e revisão de Python/SQL;
-- **laboratório extra**, para consolidação das ferramentas e dos exercícios;
-- **fechamento avançado**, com tópicos como streaming, lakehouse, feature stores, vector databases e tendências.
-
 Como a estrutura de dois finais de semana completos já totaliza 40 horas, essa sexta extra deve ser tratada como atividade complementar ou ajuste institucional da distribuição horária.
 
