@@ -441,5 +441,110 @@ Ao final da aula, o professor pode retomar os resultados das atividades com uma 
 Essa fala ajuda a fechar o percurso didático da aula e preparar a transição para o próximo encontro sobre armazenamento de dados em escala.
 
 
+---
 
+# Mapa inicial do ecossistema de dados do marketplace
+
+## 1. Principais fontes de dados do negócio
+
+- Pedidos
+- Pagamentos
+- Estoque
+- Catálogo de produtos
+- Navegação / cliques / eventos
+- Avaliações de clientes
+- Atendimento ao cliente
+- Marketing / campanhas
+
+## 2. Tipos de dados envolvidos
+
+| Fonte | Tipo de dado |
+|---|---|
+| Pedidos | Estruturado |
+| Pagamentos | Estruturado |
+| Estoque | Estruturado |
+| Catálogo em JSON | Semiestruturado |
+| Navegação / logs / eventos | Semiestruturado |
+| Avaliações textuais | Não estruturado |
+| Atendimento (áudio/chat/e-mail) | Não estruturado |
+| Marketing | Estruturado e semiestruturado |
+
+## 3. Pontos de maior crescimento de volume
+
+- Eventos de navegação, porque são gerados continuamente e em grande volume
+- Catálogo, porque cresce com mais produtos e atributos variáveis
+- Avaliações, conforme a base de clientes aumenta
+- Atendimento, principalmente se houver áudio, chat e histórico acumulado
+
+## 4. Necessidades de velocidade e escalabilidade
+
+- Pedidos e pagamentos precisam de resposta rápida e alta confiabilidade
+- Estoque precisa de atualização frequente
+- Navegação exige coleta contínua e processamento em alto volume
+- Dashboards precisam de consultas rápidas para análise gerencial
+- Recomendação e fraude pedem processamento analítico e, em alguns casos, quase em tempo real
+- IA precisa de dados integrados, limpos e históricos maiores para treinar modelos
+
+## 5. Gargalos da arquitetura centralizada atual
+
+- Um único banco relacional atende tudo ao mesmo tempo
+- Há concorrência entre OLTP e OLAP
+- O banco recebe dados de naturezas muito diferentes
+- Logs e eventos de alto volume pressionam a mesma infraestrutura
+- Extrações para analytics e IA consomem recursos do banco operacional
+- Resultado: lentidão, dificuldade de escalar e risco de impacto na operação
+
+## 6. Pelo menos 3 perguntas de negócio que o ecossistema deve responder
+
+- Quais produtos vendem mais e em quais períodos?
+- Quais clientes têm maior chance de comprar novamente?
+- Quais campanhas de marketing trazem mais conversão?
+- Quais categorias precisam de reposição de estoque mais rápida?
+- Onde os usuários abandonam a jornada de compra?
+
+## 7. Pelo menos 2 perguntas de IA que o ecossistema deve viabilizar
+
+- Quais produtos recomendar para cada usuário?
+- Quais transações têm maior probabilidade de fraude?
+- Qual é o sentimento das avaliações dos clientes?
+- Quais clientes podem ser segmentados em perfis de comportamento?
+
+## Exemplo de mapa em formato de texto
+
+```text
+FONTES DE DADOS
+├── Pedidos (estruturado)
+├── Pagamentos (estruturado)
+├── Estoque (estruturado)
+├── Catálogo JSON (semiestruturado)
+├── Navegação / cliques / logs (semiestruturado)
+├── Avaliações textuais (não estruturado)
+├── Atendimento: chat/áudio/e-mail (não estruturado)
+└── Marketing / campanhas (estruturado e semi)
+
+USOS DO NEGÓCIO
+├── Operação diária
+├── Dashboards gerenciais
+├── Segmentação de clientes
+├── Recomendação
+└── Detecção de fraude
+
+PONTOS DE MAIOR CRESCIMENTO
+├── Navegação / eventos
+├── Catálogo
+├── Avaliações
+└── Atendimento
+
+GARGALOS ATUAIS
+├── Banco relacional único central
+├── OLTP e OLAP competindo
+├── Alto volume de eventos
+├── Dados variados no mesmo sistema
+└── Extrações pesadas para analytics/IA
+
+NECESSIDADES
+├── Mais escalabilidade
+├── Separação entre operação e análise
+├── Suporte a múltiplos tipos de dados
+└── Maior velocidade para consulta e processamento
 
